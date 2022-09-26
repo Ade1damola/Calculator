@@ -1,0 +1,59 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Calculator</title>
+
+    
+    <link rel="stylesheet" href="main.css">
+   
+
+  </head>
+  <body>
+    <div class="container">
+        <div class="calc">  
+        <div class="button">
+            <div class="display-screen">
+                <input type="text" id="display" placeholder="0">
+            </div>
+            <table>
+                <tr>
+                    <td><button onclick="clr()" class="btn-operator" id="clear">C</button></td>
+                    <td><button onclick="calculate('/')" class="btn-operator" id="/">&divide;</button></td>
+                    <td><button onclick="calculate('*')" class="btn-operator" id="*">&times;</button></td>
+                    <td><button onclick="del()" class="btn-operator" id="backspace"><</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="calculate(7)" class="btn-number" id="7">7</button></td>
+                    <td><button onclick="calculate(8)" class="btn-number" id="8">8</button></td>
+                    <td><button onclick="calculate(9)" class="btn-number" id="9">9</button></td>
+                    <td><button onclick="calculate('-')" class="btn-operator" id="-">-</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="calculate(4)" class="btn-number" id="4">4</button></td>
+                    <td><button onclick="calculate(5)" class="btn-number" id="5">5</button></td>
+                    <td><button onclick="calculate(6)" class="btn-number" id="6">6</button></td>
+                    <td><button onclick="calculate('+')" class="btn-operator" id="+">+</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="calculate(1)" class="btn-number" id="1">1</button></td>
+                    <td><button onclick="calculate(2)" class="btn-number" id="2">2</button></td>
+                    <td><button onclick="calculate(3)" class="btn-number" id="3">3</button></td>
+                    <td rowspan="2"><button onclick="Result()" class="btn-equal" id="equal">=</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="calculate('(')" class="btn-operator" id="(">(</button></td>
+                    <td><button onclick="calculate(0)" class="btn-number" id="0">0</button></td>
+                    <td><button onclick="calculate(')')" class="btn-operator" id=")">)</button></td>
+                </tr>
+            </table>
+        </div>
+            
+        </div>
+    </div>
+    <script src="app.js"></script>
+    
+  </body>
+</html>
